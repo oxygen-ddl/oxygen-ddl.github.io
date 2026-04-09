@@ -175,21 +175,22 @@ redirect_from:
   - 完成模型的开发：在MATLAB/Simulink中建立泵系统动态模型；使用Embedded Coder为STM32F407自动生成C代码，实现末端稳定出料
   - 选型与供电设计：基于力矩和惯量计算为六自由度机械臂选择伺服电机、减速器和驱动器；设计24V/48V双电源供电系统及优化功率分配
   - 成果：参与联合调试，完成混凝土墙连续打印（0.4m×0.4m×0.6m），精度±5mm，验证建筑机器人工业可行性
+  
   **机械臂调试展示：**
 
   <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px;">
 
     <div style="flex: 1; min-width: 200px;">
-      <video src="collections/ES/VID_20250402_111330.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
+      <video src="collections/ES/VID_20260409_164408.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
       <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
-        1. 机械臂单关节调试演示
+        1. 机械臂调试演示
       </p>
     </div>
 
     <div style="flex: 1; min-width: 320px;">
       <video src="collections/ES/VID_20260409_163355.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
       <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
-        2. 机械臂多关节协同运动演示
+        2. 机械臂协同运动演示
       </p>
     </div>
 
