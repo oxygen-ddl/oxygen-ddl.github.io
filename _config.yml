@@ -1,0 +1,131 @@
+# Welcome to Jekyll!
+# ==================== AcadHomepage 配置 ====================
+
+title                    : "王立 "
+description              : "机器人|嵌入式控制"
+
+repository               : "oxygen-ddl/oxygen-ddl.github.io"
+
+google_scholar_stats_use_cdn : true
+
+# Google Analytics（可选，后续再填）
+google_analytics_id      :  
+
+# SEO 配置（可选，暂时留空）
+google_site_verification :  
+bing_site_verification   :  
+baidu_site_verification  :  
+
+# Site Author
+author:
+  name             : "王立 (Li Wang)"
+  avatar           : "images/avatar.jpg"          # 请把你的照片命名为 avatar.jpg 放入 images 文件夹
+  bio              : "智能机器人控制向"
+  location         : "威海·山东"
+  employer         : 
+  email            : "202321293@hit.edu.cn"                           # 建议填写你的邮箱
+  github           : "oxygen-ddl"
+  googlescholar    :                              # 如有Google Scholar可在此填写ID
+  orcid            : 
+  researchgate     : 
+  linkedin         : 
+  twitter          : 
+  weibo            : 
+
+# ====================== 站点设置 ======================
+include:
+  - .htaccess
+  - _pages
+  - files
+
+exclude:
+  - docs
+  - google_scholar_crawler
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .github
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - config
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - vendor
+
+keep_files:
+  - .git
+  - .svn
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# ====================== 转换设置 ======================
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown 处理
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# 默认配置
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# 输出设置
+permalink: /:categories/:title/
+timezone: Asia/Hong_Kong
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

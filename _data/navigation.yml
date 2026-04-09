@@ -1,0 +1,33 @@
+# main links links
+main:
+  - title: "关于我"
+    url: "/#关于我"
+
+  #- title: "News"
+  #  url: "/#-news"
+
+  # - title: "Publications"
+  #   url: "/#publications"
+
+  - title: "科创经历"
+    url: "/#科创经历"
+
+  #- title: "Honors and Awards"
+  #  url: "/#-honors-and-awards"
+
+  - title: "教育背景"
+    url: "/#教育背景"
+
+  #- title: "Invited Talks"
+  #  url: "/#-invited-talks"
+
+  #- title: "Internships"
+  #  url: "/#-internships"
+
+  - title: "项目经历"
+    url: "/#项目经历"
+
+  - title: "获奖与荣誉"
+    url: "/#获奖与荣誉"
+
+    
