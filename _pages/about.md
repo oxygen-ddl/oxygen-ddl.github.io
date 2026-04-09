@@ -10,12 +10,9 @@ redirect_from:
 
 # 关于我
 
-我是王立，目前是[哈尔滨工业大学（威海）](https://www.hitwh.edu.cn)机器人工程专业的大三本科生。
+我是王立，目前是[哈尔滨工业大学（威海）](https://www.hitwh.edu.cn)机器人工程专业的本科生。
 
 我的研究兴趣包括机器人运动控制、具身智能、自主无人系统和实时嵌入式系统。
-
-
-# 发表论文
 
 
 # 教育背景
@@ -48,13 +45,36 @@ redirect_from:
   **项目链接**：  
   [GitHub仓库](https://github.com/oxygen-ddl/stm32f407_rov_freertos)
 
+  **电器性连接图**：
+  ![电器性连接图](collections/ROV/image.png)
+
   **巡检实机演示视频：**
 
-  <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
-    <video src="collections/ROV/Image86.mp4" controls="controls" width="32%" height="auto" style="border-radius: 8px;"></video>
-    <video src="collections/ROV/Image89.mp4" controls="controls" width="32%" height="auto" style="border-radius: 8px;"></video>
-    <video src="collections/ROV/Image92.mp4" controls="controls" width="32%" height="auto" style="border-radius: 8px;"></video>
+  <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 15px;">
+
+    <div style="flex: 1; min-width: 300px;">
+      <video src="collections/ROV/Image86.mp4" controls="controls" width="100%" style="border-radius: 8px;"></video>
+      <p style="text-align: center; margin-top: 10px; color: #333; font-weight: 500;">
+        锁定姿态平移演示
+      </p>
+    </div>
+
+    <div style="flex: 1; min-width: 300px;">
+      <video src="collections/ROV/Image89.mp4" controls="controls" width="100%" style="border-radius: 8px;"></video>
+      <p style="text-align: center; margin-top: 10px; color: #333; font-weight: 500;">
+        潜航过门演示
+      </p>
+    </div>
+
+    <div style="flex: 1; min-width: 300px;">
+      <video src="collections/ROV/Image92.mp4" controls="controls" width="100%" style="border-radius: 8px;"></video>
+      <p style="text-align: center; margin-top: 10px; color: #333; font-weight: 500;">
+        标记裂缝演示
+      </p>
+    </div>
+
   </div>
+
 <br><br>
 - *2025.09 – 2026.01* \| **水下机器人冗余控制系统** \| 核心成员 · 通信设计
 
@@ -111,11 +131,11 @@ redirect_from:
   <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
     <div>
       <p><strong>使用DengFOC开发板验证FOC算法：</strong></p>
-      <video src="collections/FOC_driver/VID_20250412_170553.mp4" controls="controls" width="380" height="auto"></video>
+      <video src="collections/FOC_driver/VID_20250412_170553.mp4" controls="controls" width="400" height="auto"></video>
     </div>
     <div>
       <p><strong>使用自制PCB + FOC算法实际运行：</strong></p>
-      <video src="collections/FOC_driver/VID_20250518_215017.mp4" controls="controls" width="380" height="auto"></video>
+      <video src="collections/FOC_driver/VID_20260409_153013.mp4" controls="controls" width="280" height="auto"></video>
     </div>
   </div>
 
