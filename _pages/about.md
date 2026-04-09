@@ -48,32 +48,39 @@ redirect_from:
   **电器性连接图**：
   ![电器性连接图](collections/ROV/image.png)
 
-  **巡检实机演示视频：**
+**巡检实机演示视频：**
 
-  <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 15px;">
+<div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px;">
 
-    <div style="flex: 1; min-width: 300px;">
-      <video src="collections/ROV/Image86.mp4" controls="controls" width="100%" style="border-radius: 8px;"></video>
-      <p style="text-align: center; margin-top: 10px; color: #333; font-weight: 500;">
-        锁定姿态平移演示
-      </p>
-    </div>
-
-    <div style="flex: 1; min-width: 300px;">
-      <video src="collections/ROV/Image89.mp4" controls="controls" width="100%" style="border-radius: 8px;"></video>
-      <p style="text-align: center; margin-top: 10px; color: #333; font-weight: 500;">
-        潜航过门演示
-      </p>
-    </div>
-
-    <div style="flex: 1; min-width: 300px;">
-      <video src="collections/ROV/Image92.mp4" controls="controls" width="100%" style="border-radius: 8px;"></video>
-      <p style="text-align: center; margin-top: 10px; color: #333; font-weight: 500;">
-        标记裂缝演示
-      </p>
-    </div>
-
+  <div style="flex: 1; min-width: 280px;">
+    <video src="collections/ROV/Image86.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
+    <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
+      1. 锁定姿态平移演示
+    </p>
   </div>
+
+  <div style="flex: 1; min-width: 280px;">
+    <video src="collections/ROV/Image89.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
+    <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
+      2. 潜航过门演示
+    </p>
+  </div>
+
+  <div style="flex: 1; min-width: 280px;">
+    <video src="collections/ROV/Image92.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
+    <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
+      3. 标记裂缝演示
+    </p>
+  </div>
+
+  <div style="flex: 1; min-width: 280px;">
+    <video src="collections/ROV/VID_20260409_162318.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
+    <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
+      4. 子弹前进演示
+    </p>
+  </div>
+
+</div>
 
 <br><br>
 - *2025.09 – 2026.01* \| **水下机器人冗余控制系统** \| 核心成员 · 通信设计
@@ -83,11 +90,14 @@ redirect_from:
   - **传感器驱动与分层架构**：阅读DVL多普勒水下测速传感器技术手册，在香橙派端使用C++独立编写串口驱动程序，实现水下三维速度的实时采集与解析。在此基础上开发运动控制程序，将上层算法输出的运动参数精准映射到8通道推进器输出，搭建了完整的水下控制算法测试平台。
 
   - **项目成果**：成功构建水下机器人冗余姿态控制系统，实现机器人按照预定路线自主稳定行驶，获得软件著作权《冗余驱动水下机器人姿态控制系统》。
+  
+  **舱内硬件排布**：
+  ![舱内硬件排布](collections/ROV_Orangepi/IMG_20260409_161704.jpg)
 
   **项目链接**：  
   [GitHub仓库](https://github.com/oxygen-ddl/OrangePi_STM32_for_ROV)
 
-  **演示视频：**
+  **演示视频(2倍速)：**
 
   <div style="margin-top: 15px;">
     <video src="collections/ROV_Orangepi/VID_20260409_115922.mp4" controls="controls" width="85%" style="border-radius: 8px; max-width: 800px;"></video>
@@ -97,9 +107,9 @@ redirect_from:
 
 - *2025.04 – 2025.05* \| **有感无刷电机FOC驱动设计** \| 个人项目
 
-  - **硬件电路与PCB设计**：使用嘉立创EDA独立完成三相全桥驱动电路原理图设计与4层PCB Layout。选用STM32G431CUB6作为主控芯片，EG2133作为三相全桥驱动芯片，集成INA240电流采样电路、AS5600 12位磁编码器接口、XL1050 CAN收发器及TPS54331DR 5V电源模块。从原理图绘制、PCB布局、元件焊接到板级调试，全流程独立完成。
+  - **硬件电路与PCB设计**：使用嘉立创EDA独立完成三相全桥驱动电路原理图设计与4层PCB Layout。选用STM32G431CUB6作为主控芯片，EG2133作为三相全桥驱动芯片，集成INA240电流采样电路、AS5600 12位磁编码器接口、XL1050 CAN收发器及TPS54331DR 5V电源模块。
 
-  - **FOC控制算法实现**：在STM32G431平台上基于SPWM模型开发FOC矢量控制程序，通过AS5600磁编码器获取电机转子位置，完成Clarke与Park坐标变换；设计电流环（PI控制，1kHz）、速度环（PI控制，500Hz）、位置环（位置-速度串级控制，200Hz）三闭环系统，并开发CAN总线通信接口，实现对无刷关节电机的高精度控制。
+  - **FOC控制算法实现**：在STM32G431平台上基于SPWM模型开发FOC矢量控制程序，通过AS5600磁编码器获取电机转子位置，完成Clarke与Park坐标变换；设计电流环（1kHz）、速度环（500Hz）、位置环（200Hz）三闭环系统，并开发CAN总线通信接口，实现对无刷关节电机的高精度控制。
 
   - **项目成果**：成功实现电机电流、速度、角度高精度闭环控制，开发出一套低成本有感无刷电机FOC驱动方案，单块驱动板硬件成本控制在100元以内，为关节电机控制提供了高性价比解决方案。
 
@@ -165,7 +175,25 @@ redirect_from:
   - 完成模型的开发：在MATLAB/Simulink中建立泵系统动态模型；使用Embedded Coder为STM32F407自动生成C代码，实现末端稳定出料
   - 选型与供电设计：基于力矩和惯量计算为六自由度机械臂选择伺服电机、减速器和驱动器；设计24V/48V双电源供电系统及优化功率分配
   - 成果：参与联合调试，完成混凝土墙连续打印（0.4m×0.4m×0.6m），精度±5mm，验证建筑机器人工业可行性
+  **机械臂调试展示：**
 
+  <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px;">
+
+    <div style="flex: 1; min-width: 200px;">
+      <video src="collections/ES/VID_20250402_111330.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
+      <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
+        1. 机械臂单关节调试演示
+      </p>
+    </div>
+
+    <div style="flex: 1; min-width: 320px;">
+      <video src="collections/ES/VID_20260409_163355.mp4" controls="controls" width="100%" style="border-radius: 10px;"></video>
+      <p style="text-align: center; margin-top: 12px; color: #333; font-weight: 500;">
+        2. 机械臂多关节协同运动演示
+      </p>
+    </div>
+
+  </div>
 
 # 获奖与荣誉
 
