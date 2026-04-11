@@ -214,6 +214,6 @@ redirect_from:
 
 # 联系方式
 
-- 邮箱：2023212693@std.hit.edu.cn
+- 邮箱：2023212693@stu.hit.edu.cn
 - 电话：+86 18423121673
 - GitHub：[github.com/oxygen-ddl](https://github.com/oxygen-ddl)
